@@ -38,7 +38,14 @@
 <body>
 
 
+  <main id="main">
+  
+    @include('partials.template.header')
     @yield('content')
+    @include('partials.template.footer')
+    
+  </main><!-- End #main -->
+
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
