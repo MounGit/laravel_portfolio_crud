@@ -41,10 +41,12 @@ class IndexAboutController extends Controller
         return view('backoffice.pages.about.aboutEdit', compact('dataAbout'));
     }
     public function update(Indexabout $id, AboutRequest $request){
-        $dataAbout = $id;
         $request->validated();
+        $dataAbout = $id;
         $dataAbout->image = $request->image;
         $dataAbout->title = $request->title;
+        $dataAbout->lastname = $request->lastname;
+        $dataAbout->firstname = $request->firstname;
         $dataAbout->description = $request->description;
         $dataAbout->bday = $request->bday;
         $dataAbout->website = $request->website;
