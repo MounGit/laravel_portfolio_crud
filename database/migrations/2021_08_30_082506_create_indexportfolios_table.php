@@ -15,6 +15,7 @@ class CreateIndexportfoliosTable extends Migration
     {
         Schema::create('indexportfolios', function (Blueprint $table) {
             $table->id();
+            $table->string('image');
             $table->timestamps();
         });
     }

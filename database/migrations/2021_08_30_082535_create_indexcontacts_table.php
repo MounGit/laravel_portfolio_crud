@@ -15,6 +15,9 @@ class CreateIndexcontactsTable extends Migration
     {
         Schema::create('indexcontacts', function (Blueprint $table) {
             $table->id();
+            $table->string('location');
+            $table->string('mail');
+            $table->string('number');
             $table->timestamps();
         });
     }

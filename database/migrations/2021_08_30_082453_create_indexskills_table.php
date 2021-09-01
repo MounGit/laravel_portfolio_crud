@@ -15,6 +15,8 @@ class CreateIndexskillsTable extends Migration
     {
         Schema::create('indexskills', function (Blueprint $table) {
             $table->id();
+            $table->string('skill');
+            $table->integer('val');
             $table->timestamps();
         });
     }
